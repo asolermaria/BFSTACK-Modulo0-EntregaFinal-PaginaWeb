@@ -61,3 +61,13 @@ body {
   35% { opacity: 0; }
   100% { opacity: 0; }
 }
+
+footer{
+    color: white;
+    background-color: rgb(53, 64, 83);
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
