@@ -1,13 +1,24 @@
+html, body{
+    height: 100%;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Mulish", 'Segoe UI', Tahoma, Verdana, sans-serif;
-  color: black;
-  background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: black;
+    background-color: white;
+    display: flex;  
+    flex-direction: column;
+}
+
+main {
+    background-color: aliceblue;
+    flex: 1;
 }
 
 #navegacionCabecera, #nombreRestaurante {
-  margin: 0;
+    margin: 0;
 }
 
 #navegacionCabecera{
@@ -69,5 +80,54 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+#menucarta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+h3{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+li{
+    font-size: 18px;
+    list-style-type: none;
+}
+
+#preciomenu{
+    font-size: 20px;
+}
+
+.raciones{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.listaRaciones{
+    text-align: left;
+}
+
+.precioRaciones{
+    text-align: right;
 }
