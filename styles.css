@@ -156,3 +156,50 @@ img{
 #audioAplausos{
     margin-bottom: 25px;
 }
+
+#nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 250px;
+    padding-right: 250px;
+}
+
+.imgBar{
+    margin-bottom: 50px;
+}
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+input{
+    margin: 12px;
+    width: 250px;
+}
+textarea{
+    margin-top: 12px;
+    width: 250px;
+}
+
+.botonesFormulario{
+    display: flex;
+    flex-direction: row;
+    margin: 12px;
+    gap: 15px;
+    
+}
