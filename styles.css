@@ -131,3 +131,28 @@ li{
 .precioRaciones{
     text-align: right;
 }
+
+#recomendaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#descRecomendaciones{
+    font-size: 20px;
+}
+
+img{
+    object-fit: cover;
+}
+.imgRecomendaciones{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#audioAplausos{
+    margin-bottom: 25px;
+}
