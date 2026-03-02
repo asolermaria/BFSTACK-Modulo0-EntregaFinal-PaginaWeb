@@ -42,6 +42,7 @@ main {
     color: white;          
     text-decoration: none;
     margin: 30px;
+    font-size: 20px;
 }
 
 .carrusel {
@@ -215,7 +216,7 @@ textarea{
     font-size: 20px;
 }
 
-@media(max-width: 550px) {
+@media(max-width: 625px) {
     .botonCabecera{
         font-size: 13px;
         margin: 20px;
