@@ -117,7 +117,7 @@ li{
 }
 
 .raciones{
-    width: 600px;
+    width: 80%;
     display: flex;
     align-items: center;
     flex-direction: row;
