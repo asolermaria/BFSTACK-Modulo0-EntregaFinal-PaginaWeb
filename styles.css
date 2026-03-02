@@ -92,6 +92,7 @@ footer{
 h2{
     margin-top: 50px;
     font-size: 50px;
+    text-align: center;
 }
 
 h3{
@@ -141,6 +142,7 @@ li{
 
 #descRecomendaciones{
     font-size: 20px;
+    text-align: center;
 }
 
 img{
@@ -163,12 +165,13 @@ img{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-left: 250px;
-    padding-right: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .imgBar{
     margin-bottom: 50px;
+    width: 100%;
 }
 
 #contacto{
@@ -202,4 +205,42 @@ textarea{
     margin: 12px;
     gap: 15px;
     
+}
+
+.textRecomendaciones{
+    text-align: center;
+}
+
+.descNosotros{
+    font-size: 20px;
+}
+
+@media(max-width: 540px) {
+    .botonCabecera{
+        font-size: 13px;
+        margin: 20px;
+        
+    }
+}
+
+@media(max-width: 480px) {
+    footer{
+        font-size: 13px;
+        margin: 20px;
+        
+    }
+}
+
+@media(max-width: 686px) {
+    h2{
+        font-size: 25px;
+        margin: 20px;
+        
+    }
+}
+
+@media (max-width: 480px){
+    .textRecomendaciones{
+        text-align: center;
+    }
 }
