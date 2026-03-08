@@ -13,9 +13,24 @@ body {
 /*  VARIABLES Y CONFIGURACIONES GLOBALES */
 /* ======================================== */
 
+:root {
+  --primary-color: rgb(53, 64, 83);
+  --secondary-color: rgb(43, 47, 53);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
 h2 {
-  margin-top: 50px;
-  font-size: 50px;
+  margin-top: 20px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -31,13 +46,12 @@ img {
 }
 
 ul {
-  margin: 0;
-  margin-bottom: 25px;
+  padding: 0;
   text-align: center;
 }
 
 li {
-  font-size: 18px;
+  font-size: 16px;
   list-style-type: none;
 }
 
@@ -50,9 +64,14 @@ form {
 }
 
 input {
-  margin: 12px;
+  margin-bottom: 25px;
   width: 250px;
 }
+
+label {
+  margin-bottom: 10px;
+}
+
 textarea {
   margin-top: 12px;
   width: 250px;
@@ -60,40 +79,98 @@ textarea {
 
 footer {
   color: white;
-  background-color: rgb(53, 64, 83);
+  background-color: var(--primary-color);
   height: 75px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 /* ============== */
 /* IDs y CLASES */
 /* ============== */
 
-#navegacionCabecera,
-#nombreRestaurante {
+#navegacion-cabecera,
+#nombre-restaurante {
   margin: 0;
 }
 
-#navegacionCabecera {
-  background-color: rgb(53, 64, 83);
+#navegacion-cabecera {
+  background-color: var(--primary-color);
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#nombreRestaurante {
+#nombre-restaurante {
   color: white;
-  background-color: rgb(43, 47, 53);
-  font-weight: 100;
+  background-color: var(--secondary-color);
+  font-size: 30px;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
-.botonCabecera {
+#menu-carta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 40px;
+}
+
+#precio-menu {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 25px;
+}
+
+#recomendaciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#desc-recomendaciones {
+  font-size: 20px;
+  text-align: center;
+}
+
+#audio-aplausos {
+  margin-bottom: 25px;
+}
+
+#nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#primeros-platos,
+#segundos-platos,
+#postres-menu,
+#bebida-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.boton-cabecera {
   color: white;
   text-decoration: none;
   margin: 30px;
@@ -129,92 +206,57 @@ footer {
   animation-delay: 9s;
 }
 
-#menucarta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#preciomenu {
-  font-size: 20px;
-}
-
 .raciones {
-  width: 80%;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.racion {
+  display: flex;
+  padding: 10px 15px;
   justify-content: space-between;
+  padding: 10px 15px;
+  /* border-bottom: 1px solid grey; */
 }
 
-.listaRaciones {
-  text-align: left;
-}
-
-.precioRaciones {
+.precio {
   text-align: right;
 }
 
-#recomendaciones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#descRecomendaciones {
-  font-size: 20px;
-  text-align: center;
-}
-
-.imgRecomendaciones {
+.img-recomendaciones {
   height: 300px;
   width: 300px;
   border-radius: 10px;
   margin-bottom: 50px;
 }
 
-#audioAplausos {
-  margin-bottom: 25px;
+.img-bar {
+  margin: 20px;
+  width: 80%;
 }
 
-#nosotros {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.imgBar {
-  margin-bottom: 20px;
-  width: 60%;
-}
-
-#contacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.botonesFormulario {
+.botones-formulario {
   display: flex;
   flex-direction: row;
-  margin: 12px;
-  gap: 15px;
+  margin: 25px;
+  gap: 30px;
 }
 
-.textRecomendaciones {
+.text-recomendaciones {
   text-align: center;
+  margin-top: 0;
 }
 
-.descNosotros {
+.desc-nosotros {
   font-size: 20px;
+}
+
+#titulo-contacto {
+  font-size: 38px;
+  margin-bottom: 40px;
 }
 
 /* ================= */
@@ -243,24 +285,85 @@ footer {
 /* MEDIA QUERIES */
 /* ================= */
 
-@media (max-width: 625px) {
-  .botonCabecera {
-    font-size: 13px;
+@media (max-width: 1350px) {
+  #menu-carta {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  #desc-recomendaciones {
+    font-size: 16px;
+  }
+
+  .desc-nosotros {
+    font-size: 16px;
+  }
+
+  #titulo-contacto {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .boton-cabecera {
+    font-size: 15px;
     margin: 20px;
+  }
+  #titulo-recomendaciones {
+    font-size: 30px;
   }
 }
 
 @media (max-width: 480px) {
-  footer {
-    font-size: 13px;
-    margin: 20px;
+  h1 {
+    font-size: 40px;
   }
-}
 
-@media (max-width: 686px) {
   h2 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+
+  footer {
+    width: 100%;
+    font-size: 13px;
+  }
+  .boton-cabecera {
+    font-size: 11px;
     margin: 20px;
   }
-}
 
+  #precio-menu {
+    font-size: 25px;
+  }
+
+  #titulo-recomendaciones {
+    font-size: 25px;
+  }
+
+  #titulo-nosotros {
+    font-size: 30px;
+  }
+
+  #desc-recomendaciones {
+    font-size: 14px;
+  }
+
+  .racion {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .precio {
+    margin-top: 5px;
+  }
+
+  .desc-nosotros {
+    font-size: 14px;
+  }
+}
